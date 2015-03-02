@@ -3,11 +3,15 @@
 A simple canvas renderer for directed graphs based on <a href="https://github.com/cpettitt/dagre/" target="_blank">dagre</a>.
 
 
+
 ## example:
 
-This is the dagre example
+Example taken from the dagre repository.
 
-Some node and edges override default styles 
+Some node and edges had their default styles overridden for demo purposes.
+
+Check it [here](http://josepedrodias.github.io/dagre-canvas/index.html)
+
 
 
 ```javascript
