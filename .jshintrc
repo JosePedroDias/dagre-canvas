@@ -1,0 +1,31 @@
+{
+    "globals": {
+    	"dagre": false
+    },
+    "boss" :         false,
+    "browser":       true,
+    "curly":         true,
+    "debug":         false,
+    "devel":         false,
+    "eqeqeq":        true,
+  	"es5":           false,
+    "evil":          true,
+    "forin":         false,
+    "immed":         true,
+    "laxbreak":      true,
+    "newcap":        false,
+    "noarg":         true,
+    "node":          true,
+    "noempty":       false,
+    "nomen":         false,
+    "nonew":         false,
+    "onevar":        false,
+    "plusplus":      false,
+    "regexp":        false,
+    "smarttabs":     true,
+    "sub":           true,
+    "strict":        false,
+    "undef":         true,
+    "unused":        true,
+    "white":         false
+}

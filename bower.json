@@ -1,0 +1,27 @@
+{
+  "name": "dagre-canvas",
+  "main": "dagre-canvas.js",
+  "version": "0.0.0",
+  "authors": [
+    "José Pedro <jose.pedro.dias@gmail.com>"
+  ],
+  "description": "A simple canvas renderer for directed graphs based on dagre",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "graph",
+    "digraph",
+    "graphviz",
+    "canvas",
+    "renderer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

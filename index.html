@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>dagre-canvas</title>
+
+		<script type="text/javascript" src="https://rawgit.com/cpettitt/dagre/master/dist/dagre.min.js"></script>
+		<script type="text/javascript" src="dagre-canvas.js"></script>
+
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+			}
+
+			div {
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>dagre-canvas</h1>
+
+		<div>sample from <a href="https://github.com/cpettitt/dagre/wiki#an-example-layout" target="_blank">dagre</a></div>
+
+		<script type="text/javascript">
+			var c = window.dagreCanvas({
+				nodes: [
+					{id:'kspacey',   label:'Kevin Spacey'},
+					{id:'swilliams', label:'Saul Williams'},
+					{id:'bpitt',     label:'Brad Pitt', labelColor:'red', backgroundColor:'#DFD'},
+					{id:'hford',     label:'Harrison Ford'},
+					{id:'lwilson',   label:'Luke Wilson', fontFamily:'monospace', fontStyle:'bold', fontHeight:20},
+					{id:'kbacon',    label:'Kevin Bacon'}
+				],
+				edges: [
+					{from:'kspacey',   to:'swilliams', label:'a'},
+					{from:'swilliams', to:'kbacon',    label:'b', lineColor:'orange', labelColor:'blue', lineWidth:5},
+					{from:'bpitt',     to:'kbacon',    label:'c'},
+					{from:'hford',     to:'lwilson',   label:'d', backgroundColor:'orange', fontFamily:'monospace', fontStyle:'bold italic', fontHeight:9},
+					{from:'lwilson',   to:'kbacon',    label:'e'}
+				],
+				layout: { // https://github.com/cpettitt/dagre/wiki#configuring-the-layout
+					// rankdir: 'TB',
+					// nodesep: 50,
+					// edgesep: 10,
+					// ranksep: 50,
+					marginx: 10,
+					marginy: 10,
+
+					nodes: {
+						fontFamily:      'sans-serif',
+						fontHeight:      14,
+						fontStyle:       '', // '' | 'bold' | 'italic' | 'bold italic'
+						padding:         6,
+						labelColor:      '#000',
+						backgroundColor: '#EEE'
+					},
+
+					edges: {
+						fontFamily: 'sans-serif',
+						fontHeight: 12,
+						fontStyle:  '', // '' | 'bold' | 'italic' | 'bold italic'
+						padding:    1,
+						lineWidth:  1,
+						lineColor:  '#777',
+						labelColor: '#000'
+					}
+				}
+			});
+			document.body.appendChild(c);
+		</script>
+	</body>
+</html>
